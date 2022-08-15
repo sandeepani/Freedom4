@@ -1,0 +1,27 @@
+﻿<Page
+    x:Class="Freedom4.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Freedom4"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d android ios"
+        xmlns:android="http://uno.ui/android"
+    xmlns:ios="http://uno.ui/ios"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <StackPanel Orientation="Vertical">
+        <StackPanel Top="0">
+            <TextBlock Text="{Binding Value, ElementName=slider}" Margin="20" FontSize="30" />
+                <Slider x:Name="slider"/>
+            </StackPanel>
+        <StackPanel Top="100">
+            <android:TextBlock Text="Hello Android!" />
+            <ios:TextBlock Text="Hello iOS!" />
+            </StackPanel>
+            <TextBlock Name="block">Test</TextBlock>
+        </StackPanel>
+    </Grid>
+
+</Page>
